@@ -26,9 +26,9 @@ export default function About() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative h-[500px] rounded-xl overflow-hidden shadow-xl"
+              className="relative h-[400px] lg:h-[600px] rounded-xl overflow-hidden shadow-xl"
             >
-              <Image src="/placeholder.svg?height=1000&width=800" alt="Shubham Patel" fill className="object-cover" />
+              <Image src="/ProfilePhoto.jpg?height=1000&width=800" alt="Shubham Patel" fill className="object-cover" />
             </motion.div>
 
             <motion.div
