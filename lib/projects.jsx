@@ -4,7 +4,7 @@ export const projects = [
       title: "WrongSecrets Security App",
       description:
         "Contributed to OWASP's WrongSecrets app with frontend components, Cypress-based integration testing, and Kubernetes GitHub workflows to improve UX and CI/CD efficiency.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/OWASPthumbnail.png?height=600&width=800",
       tags: ["Java", "Spring Boot", "Kubernetes", "GitHub Actions", "Cypress"],
       demoUrl: "https://wrongsecrets.herokuapp.com/",
       githubUrl:
@@ -16,7 +16,7 @@ export const projects = [
       title: "CI/CD Pipeline for Java App",
       description:
         "Created a robust Jenkins pipeline using Maven, SonarQube, Helm, and Kubernetes, integrating Terraform for IaC and improving deployment reliability and automation.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/cicdpipeline.png?height=600&width=800",
       tags: ["Jenkins", "Maven", "Kubernetes", "Helm", "Terraform"],
       demoUrl: "#",
       githubUrl: "#",
@@ -27,7 +27,7 @@ export const projects = [
       title: "E-Commerce Website Deployment",
       description:
         "Designed a Dockerized 3-tier application architecture deployed via Kubernetes and AWS services, increasing deployment speed by 60% and enhancing scalability.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/kubernetes.png?height=600&width=800",
       tags: ["Docker", "Kubernetes", "AWS ECR", "AWS EKS", "Ansible"],
       demoUrl: "https://shubhampatel.vercel.app/",
       githubUrl: "#",

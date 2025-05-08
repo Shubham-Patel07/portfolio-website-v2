@@ -7,67 +7,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, Search } from "lucide-react"
-
-// Sample blog posts data
-const blogPosts = [
-  {
-    id: 1,
-    title: "How to Build Responsive Websites with Modern CSS",
-    excerpt:
-      "Learn the latest techniques for creating responsive layouts that work across all devices using CSS Grid, Flexbox, and more.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "May 15, 2023",
-    category: "CSS",
-    readTime: "5 min read",
-  },
-  {
-    id: 2,
-    title: "Getting Started with React Hooks",
-    excerpt:
-      "A comprehensive guide to React Hooks and how they can simplify your components and make your code more reusable.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "April 28, 2023",
-    category: "React",
-    readTime: "8 min read",
-  },
-  {
-    id: 3,
-    title: "Optimizing Website Performance",
-    excerpt: "Tips and tricks to improve your website loading speed, reduce bundle size, and enhance user experience.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "April 10, 2023",
-    category: "Performance",
-    readTime: "6 min read",
-  },
-  {
-    id: 4,
-    title: "Introduction to Next.js 13",
-    excerpt:
-      "Explore the new features and improvements in Next.js 13 and how they can benefit your web development projects.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "March 22, 2023",
-    category: "Next.js",
-    readTime: "7 min read",
-  },
-  {
-    id: 5,
-    title: "Creating Animations with Framer Motion",
-    excerpt: "Learn how to add beautiful animations to your React applications using the Framer Motion library.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "March 5, 2023",
-    category: "Animation",
-    readTime: "9 min read",
-  },
-  {
-    id: 6,
-    title: "The Power of Tailwind CSS",
-    excerpt: "Discover how Tailwind CSS can speed up your development process and help you create consistent designs.",
-    image: "/placeholder.svg?height=400&width=600",
-    date: "February 18, 2023",
-    category: "CSS",
-    readTime: "4 min read",
-  },
-]
+import { blogPosts } from "@/lib/blogPosts"
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("")

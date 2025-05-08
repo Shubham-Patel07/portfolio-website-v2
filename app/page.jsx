@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { projects } from "@/lib/projects";
+import { blogPosts } from "@/lib/blogPosts";
 
 export default function Home() {
   const ref = useRef(null);
@@ -31,7 +32,7 @@ export default function Home() {
       >
         <motion.div className="absolute inset-0 z-0" style={{ y }}>
           <div className="absolute inset-0 bg-gradient-to-b from-violet-50 to-white opacity-70"></div>
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 bg-[url('/bgimage.png?height=1080&width=1920')] bg-cover bg-center opacity-50"></div>
         </motion.div>
 
         <div className="container relative z-10">
@@ -259,36 +260,33 @@ export default function Home() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
+            {blogPosts.slice(0, 3).map((post, index) => (
               <motion.div
-                key={item}
+                key={post.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: item * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <div className="relative h-48">
                   <Image
-                    src={`/placeholder.svg?height=400&width=600`}
-                    alt={`Blog post ${item}`}
+                    src={post.image || "/placeholder.svg"}
+                    alt={post.title}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-violet-600 mb-2">
-                    May {item}, 2023
+                    {post.date}
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    How to Build Responsive Websites with Modern CSS
+                    {post.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">
-                    Learn the latest techniques for creating responsive layouts
-                    that work across all devices.
-                  </p>
+                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <Link
-                    href={`/blog/${item}`}
+                    href={`/blog/${post.id}`}
                     className="text-violet-600 font-medium hover:text-violet-800 inline-flex items-center"
                   >
                     Read More <ArrowRight className="ml-1 h-4 w-4" />
