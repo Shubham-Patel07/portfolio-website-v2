@@ -58,7 +58,7 @@ export default function About() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="border-violet-300 text-violet-700 hover:bg-violet-50">
-                  <a href="#" download>
+                  <a href="/ShubhamPatelResume.pdf" download>
                     <Download className="mr-2 h-4 w-4" /> Download Resume
                   </a>
                 </Button>
@@ -84,30 +84,16 @@ export default function About() {
           <div className="max-w-3xl mx-auto">
             {[
               {
-                year: "2023 - Present",
-                title: "Senior Frontend Developer",
-                company: "Tech Innovators Inc.",
+                year: "2024 - Present",
+                title: "IT Analyst",
+                company: "Nasdaq Inc.",
                 description:
-                  "Leading frontend development for enterprise web applications, implementing best practices, and mentoring junior developers.",
+                  "Configured and managed AWS-based SaaS applications (EC2, EKS) in 24×7 production environments, ensuring high availability, scalability, and automation via PowerShell and Batch scripts to reduce manual effort by 40%..",
               },
               {
-                year: "2020 - 2023",
-                title: "Frontend Developer",
-                company: "Digital Solutions Ltd.",
-                description:
-                  "Developed responsive web applications using React and Next.js, collaborated with designers and backend developers to deliver high-quality products.",
-              },
-              {
-                year: "2018 - 2020",
-                title: "Web Developer",
-                company: "Creative Agency",
-                description:
-                  "Built websites for various clients, focusing on responsive design, performance optimization, and SEO best practices.",
-              },
-              {
-                year: "2014 - 2018",
-                title: "Computer Science Degree",
-                company: "University of Technology",
+                year: "2020 - 2024",
+                title: "Computer Science & Engineering Degree",
+                company: "Synbiosis Institute of Technology, PNQ",
                 description:
                   "Studied computer science with a focus on web technologies, software engineering, and user experience design.",
               },
@@ -149,9 +135,9 @@ export default function About() {
               <h3 className="text-xl font-bold mb-6 text-gray-800">Technical Skills</h3>
 
               {[
-                { name: "JavaScript", level: 90 },
-                { name: "React", level: 85 },
-                { name: "HTML & CSS", level: 95 },
+                { name: "Java", level: 90 },
+                { name: "Docker", level: 85 },
+                { name: "Kubernetes", level: 75 },
                 { name: "Next.js", level: 80 },
                 { name: "Node.js", level: 75 },
               ].map((skill, index) => (
@@ -179,11 +165,11 @@ export default function About() {
 
               <div className="grid grid-cols-2 gap-4">
                 {[
+                  "Git & Version Control",
                   "UI/UX Design",
                   "Responsive Design",
                   "Performance Optimization",
                   "SEO Best Practices",
-                  "Git & Version Control",
                   "Agile Methodology",
                   "Problem Solving",
                   "Team Collaboration",
