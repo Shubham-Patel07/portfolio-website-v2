@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Twitter, Linkedin, Instagram, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -16,20 +16,14 @@ export default function Footer() {
               A passionate software developer focused on creating beautiful and functional digital experiences.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="GitHub">
+              <a href="https://github.com/Shubham-Patel07" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="Twitter">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/shubham2107patel/" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-violet-600 transition-colors" aria-label="Instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
               <a
-                href="mailto:shubham.patel@example.com"
+                href="mailto:shubham.patel.workx@gmail.com"
                 className="text-gray-600 hover:text-violet-600 transition-colors"
                 aria-label="Email"
               >
@@ -60,9 +54,9 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-gray-800 mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-600">San Francisco, California</li>
-              <li className="text-gray-600">shubham.patel@example.com</li>
-              <li className="text-gray-600">+1 (123) 456-7890</li>
+              <li className="text-gray-600">Pune, Maharashtra</li>
+              <li className="text-gray-600">shubham.patel.workx@gmail.com</li>
+              <li className="text-gray-600">+91-9879388166</li>
             </ul>
           </div>
         </div>

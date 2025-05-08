@@ -91,9 +91,16 @@ export default function About() {
                   "Configured and managed AWS-based SaaS applications (EC2, EKS) in 24×7 production environments, ensuring high availability, scalability, and automation via PowerShell and Batch scripts to reduce manual effort by 40%..",
               },
               {
+                year: "2024 - 2024",
+                title: "Intern",
+                company: "Nasdaq Inc.",
+                description:
+                  "earning to monitor and maintain highly available systems, automate operational tasks using scripting, and understand incident response processes in a real-world production environment..",
+              },
+              {
                 year: "2020 - 2024",
                 title: "Computer Science & Engineering Degree",
-                company: "Synbiosis Institute of Technology, PNQ",
+                company: "Symbiosis Institute of Technology, PNQ",
                 description:
                   "Studied computer science with a focus on web technologies, software engineering, and user experience design.",
               },
