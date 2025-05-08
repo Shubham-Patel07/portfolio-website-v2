@@ -32,7 +32,7 @@ export default function Home() {
       >
         <motion.div className="absolute inset-0 z-0" style={{ y }}>
           <div className="absolute inset-0 bg-gradient-to-b from-violet-50 to-white opacity-70"></div>
-          <div className="absolute inset-0 bg-[url('/bgimage.png?height=1080&width=1920')] bg-cover bg-center opacity-50"></div>
+          <div className="absolute inset-0 bg-[url('/bgimage3.png?height=1080&width=1920')] bg-cover bg-center opacity-50"></div>
         </motion.div>
 
         <div className="container relative z-10">
@@ -214,16 +214,16 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {[
-              "JavaScript",
-              "React",
-              "Next.js",
-              "HTML5",
-              "CSS3",
-              "Tailwind CSS",
-              "Node.js",
-              "Git",
-              "Responsive Design",
-              "UI/UX",
+              "AWS",
+              "Docker",
+              "Kubernetes",
+              "Terraform",
+              "Spring Boot",
+              "Java",
+              "Python",
+              "CI/CD",
+              "Kafka",
+              "MongoDB",
             ].map((skill, index) => (
               <motion.div
                 key={skill}
